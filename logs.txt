@@ -1,0 +1,100 @@
+2020-10-10T14:24:39.754597+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-castle-60756.herokuapp.com request_id=aa1e2ece-c3f1-4627-b581-72854a3d2279 fwd="170.238.86.144" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-10T14:34:37.000000+00:00 app[api]: Build started by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:34:59.893193+00:00 app[api]: Release v4 created by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:34:59.893193+00:00 app[api]: Deploy 9c4c3634 by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:35:00.189362+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-10T14:35:04.113160+00:00 heroku[web.1]: Starting process with command `python primo.py`
+2020-10-10T14:35:07.532372+00:00 app[web.1]: Traceback (most recent call last):
+2020-10-10T14:35:07.532407+00:00 app[web.1]: File "primo.py", line 4, in <module>
+2020-10-10T14:35:07.532591+00:00 app[web.1]: app = Flask(__name__)
+2020-10-10T14:35:07.532592+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 556, in __init__
+2020-10-10T14:35:07.532891+00:00 app[web.1]: self.add_url_rule(
+2020-10-10T14:35:07.532930+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 64, in wrapper_func
+2020-10-10T14:35:07.533078+00:00 app[web.1]: return f(self, *args, **kwargs)
+2020-10-10T14:35:07.533096+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1214, in add_url_rule
+2020-10-10T14:35:07.533508+00:00 app[web.1]: self.url_map.add(rule)
+2020-10-10T14:35:07.533512+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 1386, in add
+2020-10-10T14:35:07.534032+00:00 app[web.1]: rule.bind(self)
+2020-10-10T14:35:07.534071+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 730, in bind
+2020-10-10T14:35:07.534502+00:00 app[web.1]: self.compile()
+2020-10-10T14:35:07.534506+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 794, in compile
+2020-10-10T14:35:07.534845+00:00 app[web.1]: self._build = self._compile_builder(False).__get__(self, None)
+2020-10-10T14:35:07.534849+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 945, in _compile_builder
+2020-10-10T14:35:07.535249+00:00 app[web.1]: code = compile(module, "<werkzeug routing>", "exec")
+2020-10-10T14:35:07.535322+00:00 app[web.1]: TypeError: required field "type_ignores" missing from Module
+2020-10-10T14:35:07.662837+00:00 heroku[web.1]: Process exited with status 1
+2020-10-10T14:35:07.700385+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-10T14:35:07.704736+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-10T14:35:08.000000+00:00 app[api]: Build succeeded
+2020-10-10T14:35:10.945409+00:00 heroku[web.1]: Starting process with command `python primo.py`
+2020-10-10T14:35:13.536023+00:00 app[web.1]: Traceback (most recent call last):
+2020-10-10T14:35:13.536080+00:00 app[web.1]: File "primo.py", line 4, in <module>
+2020-10-10T14:35:13.536162+00:00 app[web.1]: app = Flask(__name__)
+2020-10-10T14:35:13.536186+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 556, in __init__
+2020-10-10T14:35:13.536444+00:00 app[web.1]: self.add_url_rule(
+2020-10-10T14:35:13.536459+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 64, in wrapper_func
+2020-10-10T14:35:13.536581+00:00 app[web.1]: return f(self, *args, **kwargs)
+2020-10-10T14:35:13.536602+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1214, in add_url_rule
+2020-10-10T14:35:13.536991+00:00 app[web.1]: self.url_map.add(rule)
+2020-10-10T14:35:13.537006+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 1386, in add
+2020-10-10T14:35:13.537504+00:00 app[web.1]: rule.bind(self)
+2020-10-10T14:35:13.537506+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 730, in bind
+2020-10-10T14:35:13.537859+00:00 app[web.1]: self.compile()
+2020-10-10T14:35:13.537880+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 794, in compile
+2020-10-10T14:35:13.538373+00:00 app[web.1]: self._build = self._compile_builder(False).__get__(self, None)
+2020-10-10T14:35:13.538376+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 945, in _compile_builder
+2020-10-10T14:35:13.538789+00:00 app[web.1]: code = compile(module, "<werkzeug routing>", "exec")
+2020-10-10T14:35:13.538844+00:00 app[web.1]: TypeError: required field "type_ignores" missing from Module
+2020-10-10T14:35:13.616227+00:00 heroku[web.1]: Process exited with status 1
+2020-10-10T14:35:13.665979+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-10T14:35:39.857399+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cryptic-castle-60756.herokuapp.com request_id=a851de0e-74a7-4367-91ac-4c944a2869ce fwd="170.238.86.144" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-10T14:35:40.745794+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-castle-60756.herokuapp.com request_id=8d602d80-d0d3-48c0-b5ec-52dd33d5b8f1 fwd="170.238.86.144" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-10T14:35:48.667491+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=cryptic-castle-60756.herokuapp.com request_id=6ef22ed7-fb7a-4542-967e-212ef43d5806 fwd="170.238.86.144" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-10T14:35:49.740559+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=cryptic-castle-60756.herokuapp.com request_id=ab4a2dc4-1cb3-405a-b86a-81c8371c82eb fwd="170.238.86.144" dyno= connect= service= status=503 bytes= protocol=https
+2020-10-10T14:37:12.000000+00:00 app[api]: Build started by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:37:36.775284+00:00 app[api]: Deploy 0c592446 by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:37:36.775284+00:00 app[api]: Release v5 created by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:37:36.983881+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-10T14:37:40.039346+00:00 heroku[web.1]: Starting process with command `python primo.py`
+2020-10-10T14:37:42.686368+00:00 app[web.1]: Traceback (most recent call last):
+2020-10-10T14:37:42.686425+00:00 app[web.1]: File "primo.py", line 4, in <module>
+2020-10-10T14:37:42.686648+00:00 app[web.1]: app = Flask(__name__)
+2020-10-10T14:37:42.686674+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 556, in __init__
+2020-10-10T14:37:42.687258+00:00 app[web.1]: self.add_url_rule(
+2020-10-10T14:37:42.687262+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 64, in wrapper_func
+2020-10-10T14:37:42.687439+00:00 app[web.1]: return f(self, *args, **kwargs)
+2020-10-10T14:37:42.687473+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/flask/app.py", line 1214, in add_url_rule
+2020-10-10T14:37:42.688159+00:00 app[web.1]: self.url_map.add(rule)
+2020-10-10T14:37:42.688196+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 1386, in add
+2020-10-10T14:37:42.688698+00:00 app[web.1]: rule.bind(self)
+2020-10-10T14:37:42.688719+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 730, in bind
+2020-10-10T14:37:42.689070+00:00 app[web.1]: self.compile()
+2020-10-10T14:37:42.689071+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 794, in compile
+2020-10-10T14:37:42.689397+00:00 app[web.1]: self._build = self._compile_builder(False).__get__(self, None)
+2020-10-10T14:37:42.689400+00:00 app[web.1]: File "/app/.heroku/python/lib/python3.8/site-packages/werkzeug/routing.py", line 945, in _compile_builder
+2020-10-10T14:37:42.689856+00:00 app[web.1]: code = compile(module, "<werkzeug routing>", "exec")
+2020-10-10T14:37:42.689860+00:00 app[web.1]: TypeError: required field "type_ignores" missing from Module
+2020-10-10T14:37:42.768983+00:00 heroku[web.1]: Process exited with status 1
+2020-10-10T14:37:42.819421+00:00 heroku[web.1]: State changed from starting to crashed
+2020-10-10T14:37:46.000000+00:00 app[api]: Build succeeded
+2020-10-10T14:43:55.000000+00:00 app[api]: Build started by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:44:23.510052+00:00 app[api]: Deploy c0d4d9ef by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:44:23.510052+00:00 app[api]: Release v6 created by user kaique.grangeiro@aluno.faculdadeimpacta.com.br
+2020-10-10T14:44:25.168419+00:00 heroku[web.1]: State changed from crashed to starting
+2020-10-10T14:44:28.727498+00:00 heroku[web.1]: Starting process with command `python primo.py`
+2020-10-10T14:44:31.129492+00:00 app[web.1]: * Serving Flask app "primo" (lazy loading)
+2020-10-10T14:44:31.129514+00:00 app[web.1]: * Environment: production
+2020-10-10T14:44:31.129625+00:00 app[web.1]: WARNING: Do not use the development server in a production environment.
+2020-10-10T14:44:31.129698+00:00 app[web.1]: Use a production WSGI server instead.
+2020-10-10T14:44:31.129716+00:00 app[web.1]: * Debug mode: off
+2020-10-10T14:44:31.138673+00:00 app[web.1]: * Running on http://0.0.0.0:47301/ (Press CTRL+C to quit)
+2020-10-10T14:44:31.597306+00:00 heroku[web.1]: State changed from starting to up
+2020-10-10T14:44:32.000000+00:00 app[api]: Build succeeded
+2020-10-10T14:45:02.580939+00:00 app[web.1]: 10.52.12.238 - - [10/Oct/2020 14:45:02] "GET / HTTP/1.1" 200 -
+2020-10-10T14:45:02.583940+00:00 heroku[router]: at=info method=GET path="/" host=cryptic-castle-60756.herokuapp.com request_id=85c4fb6e-431e-4be0-bf76-ac247cd83a13 fwd="170.238.86.144" dyno=web.1 connect=17ms service=22ms status=200 bytes=626 protocol=https
+2020-10-10T14:45:03.248868+00:00 app[web.1]: 10.52.12.238 - - [10/Oct/2020 14:45:03] "GET /favicon.ico HTTP/1.1" 404 -
+2020-10-10T14:45:03.250540+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=cryptic-castle-60756.herokuapp.com request_id=1eb2dae6-69fe-4b8f-907c-8026bffa2646 fwd="170.238.86.144" dyno=web.1 connect=0ms service=17ms status=404 bytes=379 protocol=https
+2020-10-10T14:45:37.507801+00:00 app[web.1]: 10.52.12.238 - - [10/Oct/2020 14:45:37] "GET / HTTP/1.1" 200 -
+2020-10-10T14:45:37.509515+00:00 heroku[router]: at=info method=GET path="/" host=cryptic-castle-60756.herokuapp.com request_id=8a843cd6-1095-4731-950f-a9965a6cb8ce fwd="170.238.86.144" dyno=web.1 connect=0ms service=32ms status=200 bytes=626 protocol=https
+2020-10-10T14:46:09.088133+00:00 app[web.1]: 10.63.54.150 - - [10/Oct/2020 14:46:09] "GET / HTTP/1.1" 200 -
+2020-10-10T14:46:09.089851+00:00 heroku[router]: at=info method=GET path="/" host=cryptic-castle-60756.herokuapp.com request_id=a8a2b51d-d19e-4ae3-b502-552eb917c75b fwd="170.238.86.144" dyno=web.1 connect=1ms service=4ms status=200 bytes=626 protocol=https
